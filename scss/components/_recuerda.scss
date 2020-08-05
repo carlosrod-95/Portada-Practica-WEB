@@ -1,0 +1,134 @@
+.recuerda{
+    grid-column: 1 / 8;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(min-content,1fr));
+    grid-template-rows: min-content max-content;
+
+    &-header{
+        grid-row: 1 / 2;
+        grid-column: 2 / 6;
+        margin: 20px;
+
+        &-titulo{
+            background-color: color(primary);
+            color: color(secondary);
+            @include flexPosition;
+            padding-top: 5px;
+        }
+    }
+
+    &-container{
+        grid-row: 2 / 3;
+        grid-column: 2 / 6;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-ayer{
+            width: 50%;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: color(tertiary);
+            border-radius: 5px 0px 0px 0px;
+            border-bottom: 1px solid color(primary);
+            border-right: 1px solid color(primary);
+
+            &-parrafo{
+                margin: 10px 0px 10px 0px;
+                font-size: size(md);
+            }
+
+            &-link{
+                font-size: size(sm);
+                text-decoration: none;
+                color: color(primary);
+
+                &:hover{
+                    font-size: 19px;
+                    color: color(secondary);
+                }
+            }
+        }
+
+        &-semana{
+            width: 50%;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: color(tertiary);
+            border-radius: 0px 5px 0px 0px;
+            border-bottom: 1px solid color(primary);
+            border-left: 1px solid color(primary);
+
+            &-parrafo{
+                margin: 10px 0px 10px 0px;
+                font-size: size(md);
+            }
+
+            &-link{
+                font-size: size(sm);
+                text-decoration: none;
+                color: color(primary);
+
+                &:hover{
+                    font-size: 19px;
+                    color: color(secondary);
+                }
+            }
+        }
+
+        &-mes{
+            width: 50%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            background-color: color(tertiary);
+            border-radius: 0px 0px 0px 5px;
+            border-top: 1px solid color(primary);
+            border-right: 1px solid color(primary);
+
+            &-parrafo{
+                margin: 10px 0px 10px 0px;
+                font-size: size(md);
+            }
+
+            &-link{
+                font-size: size(sm);
+                text-decoration: none;
+                color: color(primary);
+
+                &:hover{
+                    font-size: 19px;
+                    color: color(secondary);
+                }
+            }
+        }
+
+        &-year{
+            width: 50%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            background-color: color(tertiary);
+            border-radius: 0px 0px 5px 0px;
+            border-top: 1px solid color(primary);
+            border-left: 1px solid color(primary);
+
+            &-parrafo{
+                margin: 10px 0px 10px 0px;
+                font-size: size(md);
+            }
+
+            &-link{
+                font-size: size(sm);
+                text-decoration: none;
+                color: color(primary);
+
+                &:hover{
+                    font-size: 19px;
+                    color: color(secondary);
+                }
+            }
+        }
+    }
+}
