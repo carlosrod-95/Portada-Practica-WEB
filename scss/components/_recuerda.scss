@@ -22,113 +22,75 @@
         grid-row: 2 / 3;
         grid-column: 2 / 6;
         margin: 20px;
-        display: flex;
+        @include flexPosition;
         flex-wrap: wrap;
 
         &-ayer{
-            width: 50%;
-            text-align: center;
-            margin-bottom: 10px;
-            background-color: color(tertiary);
-            border-radius: 5px 0px 0px 0px;
-            border-bottom: 1px solid color(primary);
-            border-right: 1px solid color(primary);
+            @include containerRecuerda;
 
             &-parrafo{
-                margin: 10px 0px 10px 0px;
-                font-size: size(md);
+                @include parrafoRecuerda;
             }
 
             &-link{
-                font-size: size(sm);
-                text-decoration: none;
-                color: color(primary);
+                @include linkRecuerda;
 
                 &:hover{
-                    font-size: 19px;
-                    color: color(secondary);
+                    @include hoverRecuerda;
                 }
             }
         }
 
         &-semana{
-            width: 50%;
-            text-align: center;
-            margin-bottom: 10px;
-            background-color: color(tertiary);
-            border-radius: 0px 5px 0px 0px;
-            border-bottom: 1px solid color(primary);
-            border-left: 1px solid color(primary);
+            @include containerRecuerda;
 
             &-parrafo{
-                margin: 10px 0px 10px 0px;
-                font-size: size(md);
+                @include parrafoRecuerda;
             }
 
             &-link{
-                font-size: size(sm);
-                text-decoration: none;
-                color: color(primary);
+                @include linkRecuerda;
 
                 &:hover{
-                    font-size: 19px;
-                    color: color(secondary);
+                    @include hoverRecuerda;
                 }
             }
         }
 
         &-mes{
-            width: 50%;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            background-color: color(tertiary);
-            border-radius: 0px 0px 0px 5px;
-            border-top: 1px solid color(primary);
-            border-right: 1px solid color(primary);
+            @include containerRecuerda;
 
             &-parrafo{
-                margin: 10px 0px 10px 0px;
-                font-size: size(md);
+                @include parrafoRecuerda;
             }
 
             &-link{
-                font-size: size(sm);
-                text-decoration: none;
-                color: color(primary);
+                @include linkRecuerda;
 
                 &:hover{
-                    font-size: 19px;
-                    color: color(secondary);
+                    @include hoverRecuerda;
                 }
             }
         }
 
         &-year{
-            width: 50%;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            background-color: color(tertiary);
-            border-radius: 0px 0px 5px 0px;
-            border-top: 1px solid color(primary);
-            border-left: 1px solid color(primary);
+            @include containerRecuerda;
 
             &-parrafo{
-                margin: 10px 0px 10px 0px;
-                font-size: size(md);
+                @include parrafoRecuerda;
             }
 
             &-link{
-                font-size: size(sm);
-                text-decoration: none;
-                color: color(primary);
+                @include linkRecuerda;
 
                 &:hover{
-                    font-size: 19px;
-                    color: color(secondary);
+                    @include hoverRecuerda;
                 }
             }
         }
     }
+}
+
+.container-link{
+    margin-top: 20px;
 }

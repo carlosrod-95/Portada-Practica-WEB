@@ -133,6 +133,7 @@
         position: absolute;
         bottom: 4px;
         background-color: #fff22d;
+        color: black;
         padding: 5px 5px 0px 5px;
         border-radius: 0px 5px 0px 0px; }
       .noticias-secundario-uno-imagen1 {
@@ -148,6 +149,7 @@
         position: absolute;
         bottom: 4px;
         background-color: #fff22d;
+        color: black;
         padding: 5px 5px 0px 5px;
         border-radius: 0px 5px 0px 0px; }
       .noticias-secundario-dos-imagen2 {
@@ -163,6 +165,7 @@
         position: absolute;
         bottom: 4px;
         background-color: #fff22d;
+        color: black;
         padding: 5px 5px 0px 5px;
         border-radius: 0px 5px 0px 0px; }
       .noticias-secundario-tres-imagen3 {
@@ -178,6 +181,7 @@
         position: absolute;
         bottom: 4px;
         background-color: #fff22d;
+        color: black;
         padding: 5px 5px 0px 5px;
         border-radius: 0px 5px 0px 0px; }
       .noticias-secundario-cuatro-imagen4 {
@@ -193,6 +197,7 @@
         position: absolute;
         bottom: 4px;
         background-color: #fff22d;
+        color: black;
         padding: 5px 5px 0px 5px;
         border-radius: 0px 5px 0px 0px; }
       .noticias-secundario-cinco-imagen5 {
@@ -208,6 +213,7 @@
         position: absolute;
         bottom: 4px;
         background-color: #fff22d;
+        color: black;
         padding: 5px 5px 0px 5px;
         border-radius: 0px 5px 0px 0px; }
       .noticias-secundario-seis-imagen6 {
@@ -238,78 +244,121 @@
     grid-column: 2 / 6;
     margin: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; }
     .recuerda-container-ayer {
-      width: 50%;
+      width: 40%;
+      height: 70px;
       text-align: center;
-      margin-bottom: 10px;
-      background-color: #cc2229;
-      border-radius: 5px 0px 0px 0px;
-      border-bottom: 1px solid black;
-      border-right: 1px solid black; }
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
       .recuerda-container-ayer-parrafo {
-        margin: 10px 0px 10px 0px;
-        font-size: 1.5rem; }
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
       .recuerda-container-ayer-link {
         font-size: 18px;
         text-decoration: none;
-        color: black; }
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding-top: 5px;
+        transition: all .2s; }
         .recuerda-container-ayer-link:hover {
-          font-size: 19px;
-          color: white; }
+          background-color: #cc2229;
+          color: black; }
     .recuerda-container-semana {
-      width: 50%;
+      width: 40%;
+      height: 70px;
       text-align: center;
-      margin-bottom: 10px;
-      background-color: #cc2229;
-      border-radius: 0px 5px 0px 0px;
-      border-bottom: 1px solid black;
-      border-left: 1px solid black; }
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
       .recuerda-container-semana-parrafo {
-        margin: 10px 0px 10px 0px;
-        font-size: 1.5rem; }
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
       .recuerda-container-semana-link {
         font-size: 18px;
         text-decoration: none;
-        color: black; }
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding-top: 5px;
+        transition: all .2s; }
         .recuerda-container-semana-link:hover {
-          font-size: 19px;
-          color: white; }
+          background-color: #cc2229;
+          color: black; }
     .recuerda-container-mes {
-      width: 50%;
+      width: 40%;
+      height: 70px;
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      background-color: #cc2229;
-      border-radius: 0px 0px 0px 5px;
-      border-top: 1px solid black;
-      border-right: 1px solid black; }
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
       .recuerda-container-mes-parrafo {
-        margin: 10px 0px 10px 0px;
-        font-size: 1.5rem; }
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
       .recuerda-container-mes-link {
         font-size: 18px;
         text-decoration: none;
-        color: black; }
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding-top: 5px;
+        transition: all .2s; }
         .recuerda-container-mes-link:hover {
-          font-size: 19px;
-          color: white; }
+          background-color: #cc2229;
+          color: black; }
     .recuerda-container-year {
-      width: 50%;
+      width: 40%;
+      height: 70px;
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      background-color: #cc2229;
-      border-radius: 0px 0px 5px 0px;
-      border-top: 1px solid black;
-      border-left: 1px solid black; }
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
       .recuerda-container-year-parrafo {
-        margin: 10px 0px 10px 0px;
-        font-size: 1.5rem; }
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
       .recuerda-container-year-link {
         font-size: 18px;
         text-decoration: none;
-        color: black; }
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding-top: 5px;
+        transition: all .2s; }
         .recuerda-container-year-link:hover {
-          font-size: 19px;
-          color: white; }
+          background-color: #cc2229;
+          color: black; }
+
+.container-link {
+  margin-top: 20px; }
+
+.footer {
+  grid-column: 1 / 8;
+  grid-row: 5 / 6;
+  background-color: black;
+  height: 5vh;
+  display: flex;
+  justify-content: none;
+  align-items: center; }
+  .footer-text {
+    padding-left: 10px;
+    color: white; }
