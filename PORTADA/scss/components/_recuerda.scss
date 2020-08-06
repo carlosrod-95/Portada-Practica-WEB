@@ -1,0 +1,96 @@
+.recuerda{
+    grid-column: 1 / 8;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(min-content,1fr));
+    grid-template-rows: min-content max-content;
+
+    &-header{
+        grid-row: 1 / 2;
+        grid-column: 2 / 6;
+        margin: 20px;
+
+        &-titulo{
+            background-color: color(primary);
+            color: color(secondary);
+            @include flexPosition;
+            padding-top: 5px;
+        }
+    }
+
+    &-container{
+        grid-row: 2 / 3;
+        grid-column: 2 / 6;
+        margin: 20px;
+        @include flexPosition;
+        flex-wrap: wrap;
+
+        &-ayer{
+            @include containerRecuerda;
+
+            &-parrafo{
+                @include parrafoRecuerda;
+            }
+
+            &-link{
+                @include linkRecuerda;
+
+                &:hover{
+                    @include hoverRecuerda;
+                }
+            }
+        }
+
+        &-semana{
+            @include containerRecuerda;
+
+            &-parrafo{
+                @include parrafoRecuerda;
+            }
+
+            &-link{
+                @include linkRecuerda;
+
+                &:hover{
+                    @include hoverRecuerda;
+                }
+            }
+        }
+
+        &-mes{
+            @include containerRecuerda;
+
+            &-parrafo{
+                @include parrafoRecuerda;
+            }
+
+            &-link{
+                @include linkRecuerda;
+
+                &:hover{
+                    @include hoverRecuerda;
+                }
+            }
+        }
+
+        &-year{
+            @include containerRecuerda;
+
+            &-parrafo{
+                @include parrafoRecuerda;
+            }
+
+            &-link{
+                @include linkRecuerda;
+
+                &:hover{
+                    @include hoverRecuerda;
+                }
+            }
+        }
+    }
+}
+
+.container-link{
+    margin-top: 20px;
+}

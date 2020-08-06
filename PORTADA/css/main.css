@@ -1,0 +1,369 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(min-content, 1fr));
+  grid-template-rows: repeat(5, min-content); }
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(min-content, 1fr)); }
+  .header-image {
+    grid-column: 3 / 6; }
+    .header-image-panini {
+      width: 100%;
+      height: 100%; }
+
+.menu {
+  grid-column: 1 / 8;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc2229;
+  border: solid;
+  border-color: black;
+  border-width: 1px; }
+  .menu-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: none; }
+  .menu-list-item {
+    display: inline; }
+    .menu-list-item-link {
+      font-family: 'Permanent Marker', cursive;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white; }
+      .menu-list-item-link:hover {
+        color: black; }
+
+.noticias {
+  grid-column: 1 / 8;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(min-content, 1fr)); }
+  .noticias-principal {
+    grid-column: 2 / 6; }
+    .noticias-principal-uno {
+      margin: 20px; }
+      .noticias-principal-uno-titulo1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-top: 5px;
+        background-color: black;
+        color: white; }
+      .noticias-principal-uno-parrafo1 {
+        font-size: 18px;
+        padding: 10px;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        align-items: none; }
+      .noticias-principal-uno-imagen1 {
+        float: left;
+        width: 40%;
+        padding: 10px; }
+    .noticias-principal-dos {
+      margin: 20px; }
+      .noticias-principal-dos-titulo2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-top: 5px;
+        background-color: black;
+        color: white; }
+      .noticias-principal-dos-parrafo2 {
+        display: flex;
+        justify-content: center;
+        align-items: none;
+        font-size: 18px;
+        padding: 10px;
+        text-align: justify; }
+      .noticias-principal-dos-imagen2 {
+        float: right;
+        width: 40%;
+        padding: 10px; }
+    .noticias-principal-tres {
+      margin: 20px; }
+      .noticias-principal-tres-titulo3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-top: 5px;
+        background-color: black;
+        color: white; }
+      .noticias-principal-tres-parrafo3 {
+        font-size: 18px;
+        padding: 10px;
+        text-align: justify;
+        display: flex;
+        justify-content: none;
+        align-items: center; }
+  .noticias-secundario {
+    grid-column: 6 / 7; }
+    .noticias-secundario-header {
+      margin-top: 20px; }
+      .noticias-secundario-header-titulo {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding-top: 5px; }
+    .noticias-secundario-uno {
+      margin: 20px;
+      position: relative; }
+      .noticias-secundario-uno-titulo1 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 4px;
+        background-color: #fff22d;
+        color: black;
+        padding: 5px 5px 0px 5px;
+        border-radius: 0px 5px 0px 0px; }
+      .noticias-secundario-uno-imagen1 {
+        width: 100%;
+        height: 150px; }
+      .noticias-secundario-uno:hover {
+        opacity: 0.7; }
+    .noticias-secundario-dos {
+      margin: 20px;
+      position: relative; }
+      .noticias-secundario-dos-titulo2 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 4px;
+        background-color: #fff22d;
+        color: black;
+        padding: 5px 5px 0px 5px;
+        border-radius: 0px 5px 0px 0px; }
+      .noticias-secundario-dos-imagen2 {
+        width: 100%;
+        height: 150px; }
+      .noticias-secundario-dos:hover {
+        opacity: 0.7; }
+    .noticias-secundario-tres {
+      margin: 20px;
+      position: relative; }
+      .noticias-secundario-tres-titulo3 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 4px;
+        background-color: #fff22d;
+        color: black;
+        padding: 5px 5px 0px 5px;
+        border-radius: 0px 5px 0px 0px; }
+      .noticias-secundario-tres-imagen3 {
+        width: 100%;
+        height: 150px; }
+      .noticias-secundario-tres:hover {
+        opacity: 0.7; }
+    .noticias-secundario-cuatro {
+      margin: 20px;
+      position: relative; }
+      .noticias-secundario-cuatro-titulo4 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 4px;
+        background-color: #fff22d;
+        color: black;
+        padding: 5px 5px 0px 5px;
+        border-radius: 0px 5px 0px 0px; }
+      .noticias-secundario-cuatro-imagen4 {
+        width: 100%;
+        height: 150px; }
+      .noticias-secundario-cuatro:hover {
+        opacity: 0.7; }
+    .noticias-secundario-cinco {
+      margin: 20px;
+      position: relative; }
+      .noticias-secundario-cinco-titulo5 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 4px;
+        background-color: #fff22d;
+        color: black;
+        padding: 5px 5px 0px 5px;
+        border-radius: 0px 5px 0px 0px; }
+      .noticias-secundario-cinco-imagen5 {
+        width: 100%;
+        height: 150px; }
+      .noticias-secundario-cinco:hover {
+        opacity: 0.7; }
+    .noticias-secundario-seis {
+      margin: 20px;
+      position: relative; }
+      .noticias-secundario-seis-titulo6 {
+        font-size: 18px;
+        position: absolute;
+        bottom: 4px;
+        background-color: #fff22d;
+        color: black;
+        padding: 5px 5px 0px 5px;
+        border-radius: 0px 5px 0px 0px; }
+      .noticias-secundario-seis-imagen6 {
+        width: 100%;
+        height: 150px; }
+      .noticias-secundario-seis:hover {
+        opacity: 0.7; }
+
+.recuerda {
+  grid-column: 1 / 8;
+  grid-row: 4 / 5;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(min-content, 1fr));
+  grid-template-rows: min-content max-content; }
+  .recuerda-header {
+    grid-row: 1 / 2;
+    grid-column: 2 / 6;
+    margin: 20px; }
+    .recuerda-header-titulo {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5px; }
+  .recuerda-container {
+    grid-row: 2 / 3;
+    grid-column: 2 / 6;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .recuerda-container-ayer {
+      width: 40%;
+      height: 70px;
+      text-align: center;
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
+      .recuerda-container-ayer-parrafo {
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
+      .recuerda-container-ayer-link {
+        font-size: 18px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-top: 5px;
+        transition: all .2s; }
+        .recuerda-container-ayer-link:hover {
+          background-color: #cc2229;
+          color: black; }
+    .recuerda-container-semana {
+      width: 40%;
+      height: 70px;
+      text-align: center;
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
+      .recuerda-container-semana-parrafo {
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
+      .recuerda-container-semana-link {
+        font-size: 18px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-top: 5px;
+        transition: all .2s; }
+        .recuerda-container-semana-link:hover {
+          background-color: #cc2229;
+          color: black; }
+    .recuerda-container-mes {
+      width: 40%;
+      height: 70px;
+      text-align: center;
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
+      .recuerda-container-mes-parrafo {
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
+      .recuerda-container-mes-link {
+        font-size: 18px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-top: 5px;
+        transition: all .2s; }
+        .recuerda-container-mes-link:hover {
+          background-color: #cc2229;
+          color: black; }
+    .recuerda-container-year {
+      width: 40%;
+      height: 70px;
+      text-align: center;
+      margin: 10px;
+      background-color: rgba(255, 242, 45, 0.8);
+      border-radius: 0px 0px 5px 5px; }
+      .recuerda-container-year-parrafo {
+        padding-top: 2px;
+        margin: 0px 0px 10px 0px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        transition: all .2s; }
+      .recuerda-container-year-link {
+        font-size: 18px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-top: 5px;
+        transition: all .2s; }
+        .recuerda-container-year-link:hover {
+          background-color: #cc2229;
+          color: black; }
+
+.container-link {
+  margin-top: 20px; }
+
+.footer {
+  grid-column: 1 / 8;
+  grid-row: 5 / 6;
+  background-color: black;
+  height: 5vh;
+  display: flex;
+  justify-content: none;
+  align-items: center; }
+  .footer-text {
+    padding-left: 10px;
+    color: white; }

@@ -1,0 +1,197 @@
+.noticias{
+    grid-column: 1 / 8;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(min-content,1fr));
+
+    &-principal{
+        grid-column: 2 / 6;
+
+       &-uno{
+           margin: 20px;
+
+           &-titulo1{
+               @include flexPosition;
+               font-size: size(md);
+               padding-top: 5px;
+               background-color: color(primary);
+               color: color(secondary);
+           }
+
+           &-parrafo1{
+               font-size: size(sm);
+               padding: 10px;
+               text-align: justify;   
+               @include flexPosition(center, none);
+           }
+
+           &-imagen1{
+               float: left;
+               width: 40%;
+               padding: 10px;
+           }        
+       }
+
+       &-dos{
+        margin: 20px;
+
+        &-titulo2{
+            @include flexPosition;
+            font-size: size(md);
+            padding-top: 5px;
+            background-color: color(primary);
+            color: color(secondary);
+        }
+
+        &-parrafo2{
+            @include flexPosition(center,none);
+            font-size: size(sm);
+            padding: 10px;
+            text-align: justify;
+        }
+
+        &-imagen2{
+            float: right;
+            width: 40%;
+            padding: 10px;
+        }        
+    }
+
+       &-tres{
+             margin: 20px;
+
+            &-titulo3{
+                @include flexPosition;
+                font-size: size(md);
+                padding-top: 5px;
+                background-color: color(primary);
+                color: color(secondary);
+            }
+
+            &-parrafo3{
+                font-size: size(sm);
+                padding: 10px;
+                text-align: justify;
+                @include flexPosition(none, center)  
+            }
+       }
+    }
+
+    &-secundario{
+        grid-column: 6 / 7;
+
+        &-header{
+            margin-top: 20px;
+
+            &-titulo{
+                font-size: size(md);
+                @include flexPosition;
+                background-color: color(primary);
+                color: color(secondary);
+                padding-top: 5px;
+            }
+        }
+
+        &-uno{
+            margin: 20px;
+            position: relative;
+
+            &-titulo1{
+                @include titulosNoticiasSecundarias;
+            }
+
+            &-imagen1{
+                @include imagenesNoticiasSecundarias;
+            }
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        &-dos{
+            margin: 20px;
+            position: relative;
+
+            &-titulo2{
+                @include titulosNoticiasSecundarias;
+            }
+
+            &-imagen2{
+                @include imagenesNoticiasSecundarias;
+            }
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        &-tres{
+            margin: 20px;
+            position: relative;
+
+            &-titulo3{
+                @include titulosNoticiasSecundarias;
+            }
+
+            &-imagen3{
+                @include imagenesNoticiasSecundarias;
+            }
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        &-cuatro{
+            margin: 20px;
+            position: relative;
+
+            &-titulo4{
+                @include titulosNoticiasSecundarias;
+            }
+
+            &-imagen4{
+                @include imagenesNoticiasSecundarias;
+            }
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        &-cinco{
+            margin: 20px;
+            position: relative;
+
+            &-titulo5{
+                @include titulosNoticiasSecundarias;
+            }
+
+            &-imagen5{
+                @include imagenesNoticiasSecundarias;
+            }
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        &-seis{
+            margin: 20px;
+            position: relative;
+
+            &-titulo6{
+                @include titulosNoticiasSecundarias;
+            }
+
+            &-imagen6{
+                @include imagenesNoticiasSecundarias;
+            }
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
