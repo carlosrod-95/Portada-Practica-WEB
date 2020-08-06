@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(7, minmax(min-content,1fr));
     grid-template-rows: min-content max-content;
+    margin-bottom: 20px;
 
     &-header{
         grid-row: 1 / 2;
